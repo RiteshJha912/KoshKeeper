@@ -5,7 +5,7 @@ import { useGetTransactions } from "../../hooks/useGetTransactions";
 import { useGetUserInfo } from "../../hooks/useGetUserInfo";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../../config/firebase-config";
-import KoshaKeeperLogo2 from "../../assets/KoshaKeeperLogo2.png";
+import coin from "../../assets/coin.png";
 import "./styles.css";
 
 export const ExpenseTracker = () => {
@@ -45,29 +45,31 @@ export const ExpenseTracker = () => {
   return (
     <>
       <div className="expense-tracker">
+        <div className="top-box">
+          <div className="brand-name">कोष-Keeper</div>
+          <img className="logo-img" src={coin} alt="Logo" />
+        </div>
         <div className="container">
           <h1>Welcome, {name}!</h1>
           <div className="balance">
             <h3>Current Balance:</h3>
             {balance >= 0 ? (
-                <h2>₹{balance}</h2>
+              <h2>₹{balance}</h2>
             ) : (
-                <h2>- ₹{balance * -1}</h2>
+              <h2>- ₹{balance * -1}</h2>
             )}
-            </div>
-            <hr className="balance-divider" />
-            <div className="summary">
+          </div>
+          <hr className="balance-divider" />
+          <div className="summary">
             <div className="income">
-                <h4>Total Income</h4>
-                <p>₹{income}</p>
+              <h4>Total Income</h4>
+              <p>₹{income}</p>
             </div>
             <div className="expense">
-                <h4>Total Expenses</h4>
-                <p>₹{expenses}</p>
+              <h4>Total Expenses</h4>
+              <p>₹{expenses}</p>
             </div>
-            </div>
-
-
+          </div>
           <form className="add-transaction" onSubmit={onSubmit}>
             <input
               type="text"
@@ -113,8 +115,6 @@ export const ExpenseTracker = () => {
           </div>
         )}
       </div>
-
-      
       <div className="transactions-container">
         <div className="transactions">
           <h3>Transaction History</h3>
