@@ -14,7 +14,6 @@ body {
     background-color: #000000;
     background: #000000 url('../../assets/rupeedoodlelogin.png') repeat;
     background-size: 20px 20px;
-    /* Adjust size to fit the design */
     background-position: center;
 }
 
@@ -54,9 +53,10 @@ body {
 
 h1 {
     font-family: 'Hammersmith One', sans-serif;
-    font-size: 1.9rem !important;
+    font-size: 3rem;
+    /* Default size */
+    margin-bottom: 20px;
     color: #000000;
-    margin-bottom: 10px;
 }
 
 p {
@@ -106,4 +106,60 @@ input:focus,
 button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(255, 204, 36, 0.5);
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+        margin: 0 20px;
+        width: auto;
+    }
+
+    .login-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        /* Adjusted size for medium screens */
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .login-with-google-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 15px;
+        margin: 0 10px;
+        width: auto;
+    }
+
+    .login-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        /* Further reduced size for small screens */
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .login-with-google-btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
 }
