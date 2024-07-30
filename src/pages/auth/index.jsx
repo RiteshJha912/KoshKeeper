@@ -37,7 +37,7 @@ export const Auth = () => {
         <h1>Welcome to कोष-Keeper👋</h1>
         <p>Your personal expense tracker. <br />Sign in to start managing your finances!</p>
         <button className="login-with-google-btn" onClick={signInwithGoogle}>
-          <img src={GoogleLogo} alt="Google Logo" width="20" height="20" /> {/* Add the Google logo */}
+          <img src={GoogleLogo} alt="Google Logo" width="20" height="20" /> 
           Sign in with Google
         </button>
       </div>
