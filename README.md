@@ -6,5 +6,7 @@ Simple and intuitive expense tracking
 Elegant and responsive design
 Robust backend with Firebase integration  
 
+Also encompasses custom hooks for firebase functionality implementations.
+
 
 View here : https://expense-tracker99.web.app/
