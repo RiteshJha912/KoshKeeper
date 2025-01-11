@@ -1,4 +1,4 @@
-# 🪙💰 कोष-Keeper 💰🪙
+# कोष-Keeper 💰🪙
 
 ### [Experience कोष-Keeper Now !](https://expense-tracker99.web.app/)
 
