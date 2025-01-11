@@ -49,4 +49,4 @@ Root Folder
 ---
 ### Collaboration
 Have ideas to improve कोष-Keeper? Let's make it even better together!         
-Drop me a message at ritesh.exe@proton.me & let’s collaborate.
+Drop me a message at **ritesh.exe@proton.me**
